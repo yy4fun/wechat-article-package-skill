@@ -42,6 +42,8 @@ Use this structure for deep-dive articles based on a source:
 
 Write in a polished Chinese long-form style: narrative but clear, restrained but opinionated. Do not imitate any living publication's exact voice.
 
+Use a low-AI-voice content prompt before drafting. The prompt should force a concrete reader, a concrete workplace scene, source-backed claims, and a final human edit pass. Avoid producing a generic "AI trend analysis" essay.
+
 For the full article drafting template, read `references/article-template.md`.
 
 For layout packages and rendered image sets, read `references/social-layout.md`.
@@ -147,6 +149,7 @@ Before finishing, verify:
 
 - Article separates source facts from extension and does not invent unsupported claims.
 - Article language is natural Chinese, not translationese or AI-flavored filler.
+- Article passes the low-AI-voice check: concrete scene, source-backed details, few abstract slogans, no generic "从工具到工作流" filler unless the source specifically supports it.
 - If covers are requested, both `21:9` and `1:1` variants exist unless the user only asked for one.
 - Text-heavy covers/cards use deterministic HTML/CSS when possible.
 - WeChat editor/API body does not repeat the platform title as a visible first `<h1>`.
