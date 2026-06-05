@@ -1,9 +1,9 @@
 ---
-name: wechat-cover-image
+name: wechat-article-package
 description: Use when turning a source URL, blog post, article text, research note, or company announcement into a Chinese WeChat official account article package, including deep-dive draft, title, summary, cover images, WeChat draft HTML/API payload, and optional Feishu/Lark doc sync.
 ---
 
-# WeChat Cover Image
+# WeChat Article Package
 
 Create polished Chinese WeChat article packages from source URLs or source material: source extraction, article angle, Chinese deep-dive draft, title, summary, cover pair, supporting article images, WeChat-ready HTML/API payload, and optional Feishu/Lark document sync. Default to the built-in `$imagegen` workflow only when producing raster illustration assets; prefer HTML/CSS for text-heavy covers and cards.
 
