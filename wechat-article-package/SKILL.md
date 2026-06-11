@@ -34,7 +34,7 @@ Create polished Chinese WeChat article packages from source URLs or source mater
 
 Use this structure for deep-dive articles based on a source:
 
-- Weekly guide, when relevant: briefly summarize the week's source-blog updates, then say why this article is the one worth focusing on.
+- Weekly guide, when relevant: use the column title format `Claude Blog 每周精选 # <本周主题>`, briefly summarize the week's source-blog updates, then say why this article is the one worth focusing on.
 - Opening: begin with a specific work scene, contradiction, or result, not an abstract slogan.
 - Selected translation: use translated source passages as evidence, not as the article's whole structure.
 - Editorial interpretation: explain what the selected passage proves, what it misses, and why it matters in a familiar work setting.
@@ -152,6 +152,7 @@ Before finishing, verify:
 - Article language is natural Chinese, not translationese or AI-flavored filler.
 - Article passes the low-AI-voice check: concrete scene, source-backed details, few abstract slogans, no generic "从工具到工作流" filler unless the source specifically supports it.
 - Article does not feel like translated/copied source material: selected translated passages are framed, explained, and connected to the article's own argument.
+- If it is a weekly source-blog column, the title follows `Claude Blog 每周精选 # <本周主题>` and the theme is concrete, eye-catching, and useful enough to justify reading.
 - If it is a weekly source-blog column, the weekly guide is short and editorial, not a duplicate opening paragraph or a loose news list.
 - If covers are requested, both `21:9` and `1:1` variants exist unless the user only asked for one.
 - Text-heavy covers/cards use deterministic HTML/CSS when possible.

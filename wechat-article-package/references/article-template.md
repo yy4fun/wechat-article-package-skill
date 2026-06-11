@@ -12,11 +12,11 @@ Use this when turning a source article, product blog, research note, or company 
 ## Draft Shape
 
 ```markdown
-# <Chinese title>
+# Claude Blog 每周精选 # <本周主题>
 
 ![Cover](output/wechat-21x9-cover.png)
 
-## 本周看点
+## Claude Blog 每周精选
 
 <If this is a weekly source-blog column: 2-4 concise bullets about the week's source-blog updates, then one sentence explaining why this article is the focus. Skip this section for a single-source article unless the user asks for it.>
 
@@ -118,21 +118,31 @@ Use this prompt before drafting the article body:
 标题要求：
 - 不要像翻译标题。
 - 不要用"某某博客解读""Claude Blog 一周观察"作为主标题。
+- 周更栏目标题固定使用：`Claude Blog 每周精选 # <本周主题>`。
+- `<本周主题>` 必须是这一期的可传播判断或问题，短、具体、吸引眼球，能让读者知道为什么值得点开。
+- `<本周主题>` 不要照搬英文标题，也不要只写来源名；优先使用中文工作场景里的问题、结果、反差或数字。
 - 尽量出现具体对象、动作、结果或冲突。
 - 可以有数字，但不能硬造数字。
 - 少用"深度解读""全面解析""范式""重塑"。
 - 标题要让读者在点开前知道：这篇文章会给我一个案例、一个判断，或一个可复用方法。
 - 如果标题去掉来源名称就不成立，重写。
 
+栏目标题示例：
+- `Claude Blog 每周精选 # AI 查数，难在口径`
+- `Claude Blog 每周精选 # Agent 上线后，谁来验收`
+- `Claude Blog 每周精选 # 代码能写，流程难交`
+- `Claude Blog 每周精选 # 模型进公司，先补规则`
+
 第四阶段：开头和一周摘要
 
-如果这是"Claude Blog 一周观察"类文章，开头要保留一周摘要，但摘要只承担编辑导读功能，不要写成正文主开场。
+如果这是"Claude Blog 每周精选"类文章，开头要保留一周摘要，但摘要只承担编辑导读功能，不要写成正文主开场。
 
 一周摘要要求：
 - 控制在 150 到 250 字。
 - 用 2 到 4 个要点概括本周 Claude Blog 的更新方向。
 - 每个要点必须具体，不要写"AI 正在进入工作流"这种泛话。
 - 摘要最后必须说明：为什么本期重点选这一篇。
+- 摘要要呼应标题里的 `<本周主题>`，让栏目名、摘要和正文主线连成一条线。
 - 不要在摘要里提前重复正文第一段。
 - 摘要之后，用一句话自然切入重点文章。
 
@@ -164,7 +174,7 @@ Use this prompt before drafting the article body:
 
 推荐结构：
 
-1. 本周看点（仅周观察类文章使用）
+1. Claude Blog 每周精选（仅周更栏目使用）
    - 2 到 4 个具体要点。
    - 说明为什么本期重点讲这一篇。
    - 写成编辑导读，不写成松散新闻列表。
@@ -243,6 +253,8 @@ Use this prompt before drafting the article body:
 发布前自检：
 - 读者会不会觉得这是翻译搬运？
 - 标题是否让人知道点开能得到什么？
+- 周更栏目标题是否使用了 `Claude Blog 每周精选 # <本周主题>`？
+- `<本周主题>` 是否足够具体、吸引眼球，并且能自然引出正文？
 - 一周摘要是否具体、短、有选择理由，而不是松散新闻列表？
 - 正文开头 120 字有没有具体场景、矛盾或结果？
 - 每段精选译文后面是否有解释？
@@ -262,7 +274,8 @@ Use this prompt before drafting the article body:
    - 简短说明为什么推荐。
 
 3. 公众号发布稿
-   - 周观察类文章保留"本周看点"导读。
+   - 周更栏目文章标题使用 `Claude Blog 每周精选 # <本周主题>`。
+   - 周更栏目文章保留"Claude Blog 每周精选"导读。
    - 采用"精选译文 + 编辑解读"结构。
    - 保留来源链接。
    - 不出现重复标题。
