@@ -36,6 +36,27 @@ Use image generation only for raw visual assets:
 
 Do not ask an image model to render long Chinese headings, tables, labels, or citations when HTML/CSS can do it.
 
+## Text Fit Rule
+
+Clipped text is a release blocker. Any generated or rendered image with half-visible lines, cropped descenders, or title text cut by a card edge must be fixed and re-exported.
+
+For HTML/CSS rendered images:
+
+- Do not put dynamic text in fixed-height rows unless the copy is already known to fit.
+- Prefer `min-height` plus padding over hard `height` for cards that may wrap.
+- If the overall canvas height is fixed, increase row height, shorten labels, reduce font size, or use fewer items rather than clipping text.
+- Set enough vertical padding for every rounded card; a wrapped two-line title needs more top/bottom padding than a single line.
+- Use line-height around `1.25-1.45` for card titles; avoid very tight line-height.
+- Avoid `overflow:hidden` on text containers unless paired with intentional ellipsis. Do not use ellipsis for important titles.
+- For mixed Chinese/English titles, create a short Chinese label for the card and keep the full source title in the article body or caption.
+- For weekly roundup cards, each row should use a short topic label plus one-line takeaway. Do not paste full English source titles into compact rows.
+
+For image-model prompts:
+
+- Keep all visible text short and preferably single-line.
+- Explicitly ask for no cropped text, no clipped text, and no half-visible wrapped line.
+- If the image needs a table, list, timeline, or multiple labels, generate the background illustration first and add text later with HTML/CSS.
+
 ## WeChat Cover Pair
 
 `21:9` main cover:
@@ -92,6 +113,8 @@ Avoid making every image a rounded card grid. Use rules, columns, type hierarchy
 - Body text blocks should use `<section>` rather than `<p>` if WeChat's final editor adds first-line indentation. Body paragraphs/headings should carry inline `text-indent:0em !important; text-align:left;`. If direct section text still indents, wrap the text in an inner block-level span reset. Do not rely only on a parent class or stylesheet, because WeChat can rewrite styles after a draft enters the final editor.
 - Text is readable at phone thumbnail size.
 - Text uses free-for-commercial-use Chinese fonts and does not look overly bold or heavy.
+- All text is fully visible: no clipped line, cropped descender, half-visible wrapped title, or text hidden by a fixed-height card.
+- Multi-line text boxes have enough vertical padding and line-height; if a card title wraps, the card grows or the copy is shortened.
 - Chinese line breaks are intentional.
 - No text touches edges or overlaps images.
 - Each image has one focal point.

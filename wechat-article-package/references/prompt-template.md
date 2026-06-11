@@ -15,11 +15,13 @@ Subject: <one-sentence visual metaphor for the article>. Keep it friendly, light
 
 Composition/framing: 2.35:1 wide cover. Main visual elements centered or slightly left. Right side reserved for large Chinese title text on a soft rounded blob. Keep breathing room but do not leave large dead-empty areas. Use one strong focal visual, medium-size supporting objects, and small micro-details to balance the frame. Avoid clutter.
 
-Text (verbatim): Large title: "<TITLE, 8 Chinese characters or fewer>". Small subtitle below: "<SHORT SUBTITLE>". Use free-for-commercial-use Chinese typography only. Preferred fonts: Noto Sans CJK SC, Source Han Sans SC, Source Han Serif SC, LXGW WenKai, Alibaba PuHuiTi 3.0. Use medium or semibold weight, not extra-bold/heavy black. Text color dark gray or black, crisp and readable.
+Text (verbatim): Large title: "<TITLE, 8 Chinese characters or fewer>". Small subtitle below: "<SHORT SUBTITLE>". Use free-for-commercial-use Chinese typography only. Preferred fonts: Noto Sans CJK SC, Source Han Sans SC, Source Han Serif SC, LXGW WenKai, Alibaba PuHuiTi 3.0. Use medium or semibold weight, not extra-bold/heavy black. Text color dark gray or black, crisp and readable. Keep title on one line when possible. If the title must wrap, both lines must be fully visible inside the blob with generous top/bottom padding and line-height.
 
 Lighting/mood: bright, gentle, young, healing, smart, low-pressure.
 
-Constraints: flat fill colors with simple black outlines; no photorealism, no thick 3D, no realistic people, no logos, no brand marks, no watermark, no English title unless the user asks, no random letters, no distorted text, no overly heavy title font, no hollow/empty-feeling layout. Make the title clearly readable.
+Constraints: flat fill colors with simple black outlines; no photorealism, no thick 3D, no realistic people, no logos, no brand marks, no watermark, no English title unless the user asks, no random letters, no distorted text, no overly heavy title font, no hollow/empty-feeling layout, no cropped text, no clipped text, no half-visible wrapped line. Make the title clearly readable.
+
+Important text safety: do not place multi-line text inside shallow cards or tight rounded rectangles. If the image needs a list, timeline, table, or multiple labels, keep each label short or leave those labels for HTML/CSS rendering after the illustration is generated.
 ```
 
 ## Example From Finance-AI Article
@@ -37,9 +39,11 @@ Subject: a finance team using AI to understand why numbers change; charts, repor
 
 Composition/framing: 2.35:1 wide cover. Main visual elements centered or slightly left. Right side reserved for large Chinese title text on a soft cream-yellow rounded blob. Keep breathing room but do not leave large dead-empty areas. Use one strong focal visual, medium-size supporting objects, and small micro-details to balance the frame. Avoid clutter.
 
-Text (verbatim): Large title: "数字会说话". Small subtitle below: "Claude 帮财务解释变化". Use free-for-commercial-use Chinese typography only. Preferred fonts: Noto Sans CJK SC, Source Han Sans SC, Source Han Serif SC, LXGW WenKai, Alibaba PuHuiTi 3.0. Use medium or semibold weight, not extra-bold/heavy black. Text color dark gray or black, crisp and readable.
+Text (verbatim): Large title: "数字会说话". Small subtitle below: "Claude 帮财务解释变化". Use free-for-commercial-use Chinese typography only. Preferred fonts: Noto Sans CJK SC, Source Han Sans SC, Source Han Serif SC, LXGW WenKai, Alibaba PuHuiTi 3.0. Use medium or semibold weight, not extra-bold/heavy black. Text color dark gray or black, crisp and readable. Keep title on one line when possible. If the title must wrap, both lines must be fully visible inside the blob with generous top/bottom padding and line-height.
 
 Lighting/mood: bright, gentle, young, healing, smart, low-pressure.
 
-Constraints: flat fill colors with simple black outlines; no photorealism, no thick 3D, no realistic people, no logos, no brand marks, no watermark, no English title except the word Claude in subtitle, no random letters, no distorted text, no overly heavy title font, no hollow/empty-feeling layout. Title must be 8 Chinese characters or fewer and clearly readable.
+Constraints: flat fill colors with simple black outlines; no photorealism, no thick 3D, no realistic people, no logos, no brand marks, no watermark, no English title except the word Claude in subtitle, no random letters, no distorted text, no overly heavy title font, no hollow/empty-feeling layout, no cropped text, no clipped text, no half-visible wrapped line. Title must be 8 Chinese characters or fewer and clearly readable.
+
+Important text safety: do not place multi-line text inside shallow cards or tight rounded rectangles. If the image needs a list, timeline, table, or multiple labels, keep each label short or leave those labels for HTML/CSS rendering after the illustration is generated.
 ```

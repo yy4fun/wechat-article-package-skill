@@ -25,10 +25,11 @@ Create polished Chinese WeChat article packages from source URLs or source mater
 6. When exporting for WeChat editor/API, remove the first Markdown `#` title or first body `<h1>` from the article content; the platform title field already supplies it.
 7. Produce a WeChat pair: `21:9` main cover plus `1:1` square share cover unless the user only asks for text.
 8. For text-heavy covers/cards, build with HTML/CSS and render to PNG so Chinese typography is exact. Use `imagegen` only for raw illustration/photo assets.
-9. Plan supporting images: official source screenshots/figures for evidence, self-made diagrams/cards for explanation, generated images only when a missing visual metaphor is needed.
-10. Save generated/rendered images under the project workspace, usually `assets/` or a task `output/` folder, without deleting original generated images.
-11. If WeChat API credentials/config exist and the user asked for a draft, create a draft but never publish automatically.
-12. If Feishu/Lark sync is enabled, create or update a readable doc with inline images and structured blocks; do not dump images at the end.
+9. Never ask an image model to typeset multi-line Chinese/English text inside tight cards. For any list card, quote card, table, or card with wrapped titles, use HTML/CSS and inspect the rendered PNG for clipping before publishing.
+10. Plan supporting images: official source screenshots/figures for evidence, self-made diagrams/cards for explanation, generated images only when a missing visual metaphor is needed.
+11. Save generated/rendered images under the project workspace, usually `assets/` or a task `output/` folder, without deleting original generated images.
+12. If WeChat API credentials/config exist and the user asked for a draft, create a draft but never publish automatically.
+13. If Feishu/Lark sync is enabled, create or update a readable doc with inline images and structured blocks; do not dump images at the end.
 
 ## Article Writing
 
@@ -144,7 +145,8 @@ Visual style: flat hand-drawn doodle illustration, Macaron colors, soft watercol
 Composition: main visual left/center, right side title area on rounded pastel blob, breathing room but not empty; include 2-5 topic-specific objects
 Text (verbatim): Large title: "<8 Chinese chars or fewer>". Small subtitle: "<short subtitle>"
 Typography: use free-for-commercial-use Chinese fonts such as Noto Sans CJK SC, Source Han Sans SC, LXGW WenKai, or Alibaba PuHuiTi 3.0; medium or semibold weight, not heavy black.
-Constraints: accurate Chinese text, no logos, no watermark, no random letters, no photorealism, no empty-feeling layout, no crowded layout
+Text safety: all text must fit fully inside its container with generous padding; no cropped text, no clipped descenders, no half-visible second line. If text wraps, use a larger text box or smaller font.
+Constraints: accurate Chinese text, no logos, no watermark, no random letters, no photorealism, no empty-feeling layout, no crowded layout, no clipped or cropped text
 ```
 
 ## Quality Check
@@ -160,6 +162,9 @@ Before finishing, verify:
 - If covers are requested, both `21:9` and `1:1` variants exist unless the user only asked for one.
 - Text-heavy covers/cards use deterministic HTML/CSS when possible.
 - Final cover text uses verified free-for-commercial-use Chinese fonts and avoids overly bold/heavy title weight.
+- Multi-line titles, mixed Chinese/English titles, list cards, and roundup cards have enough row height, line-height, and padding; no text is clipped by fixed-height boxes.
+- If a source title is too long for a compact card, rewrite it into a short Chinese label instead of squeezing or clipping it.
+- Rendered PNGs are visually inspected before delivery; any clipped text, cropped line, or half-visible title must be fixed and re-rendered.
 - WeChat editor/API body does not repeat the platform title as a visible first `<h1>`.
 - WeChat editor/API body does not repeat the same hook before and after the cover image.
 - WeChat body section headings look like article headings, not detached card titles or broken vertical-bar blocks.
