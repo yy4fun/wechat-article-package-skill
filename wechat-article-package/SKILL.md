@@ -34,15 +34,16 @@ Create polished Chinese WeChat article packages from source URLs or source mater
 
 Use this structure for deep-dive articles based on a source:
 
-- Opening: begin with a specific work scene or contradiction, not an abstract slogan.
-- Source translation: preserve the original article's key facts, examples, people, dates, and numbers.
-- Interpretation: explain why those facts matter for Chinese readers.
-- Extension: connect the case to broader work, management, product, or business implications.
+- Weekly guide, when relevant: briefly summarize the week's source-blog updates, then say why this article is the one worth focusing on.
+- Opening: begin with a specific work scene, contradiction, or result, not an abstract slogan.
+- Selected translation: use translated source passages as evidence, not as the article's whole structure.
+- Editorial interpretation: explain what the selected passage proves, what it misses, and why it matters in a familiar work setting.
+- Local work-scene comparison: discuss teams, products, management, process, data, code, knowledge bases, or review steps without sounding like a lecture to the audience.
 - Closing: end with a concise judgment, not a generic motivational paragraph.
 
 Write in a polished Chinese long-form style: narrative but clear, restrained but opinionated. Do not imitate any living publication's exact voice.
 
-Use a low-AI-voice content prompt before drafting. The prompt should force a concrete reader, a concrete workplace scene, source-backed claims, and a final human edit pass. Avoid producing a generic "AI trend analysis" essay.
+Use the full content prompt before drafting. The prompt should force a concrete reader, a concrete workplace scene, source-backed claims, selected translation plus editorial interpretation, a weekly guide when relevant, and a final human edit pass. Avoid producing a generic "AI trend analysis" essay or a translation dump.
 
 For the full article drafting template, read `references/article-template.md`.
 
@@ -150,6 +151,8 @@ Before finishing, verify:
 - Article separates source facts from extension and does not invent unsupported claims.
 - Article language is natural Chinese, not translationese or AI-flavored filler.
 - Article passes the low-AI-voice check: concrete scene, source-backed details, few abstract slogans, no generic "从工具到工作流" filler unless the source specifically supports it.
+- Article does not feel like translated/copied source material: selected translated passages are framed, explained, and connected to the article's own argument.
+- If it is a weekly source-blog column, the weekly guide is short and editorial, not a duplicate opening paragraph or a loose news list.
 - If covers are requested, both `21:9` and `1:1` variants exist unless the user only asked for one.
 - Text-heavy covers/cards use deterministic HTML/CSS when possible.
 - WeChat editor/API body does not repeat the platform title as a visible first `<h1>`.

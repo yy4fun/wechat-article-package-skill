@@ -8,7 +8,7 @@ Separate image roles:
 
 - Cover / main visual: usually self-made or generated, not copied from the source.
 - Source evidence: official source figures, screenshots, architecture diagrams, or product screenshots used to explain the original.
-- Explanation image: self-made diagram/card that interprets the source for Chinese readers.
+- Explanation image: self-made diagram/card that interprets the source for the audience.
 - Decorative image: avoid unless it adds meaning.
 
 ## Source Blog Images
