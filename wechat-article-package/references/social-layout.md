@@ -45,6 +45,9 @@ Do not ask an image model to render long Chinese headings, tables, labels, or ci
 - One strong visual relation: diagram, screenshot, generated illustration, or source image.
 - Subtitle and metadata allowed if they help.
 - Keep center from feeling hollow; scale title or visual up before adding decoration.
+- Use only verified free-for-commercial-use Chinese fonts for final text. Prefer `Noto Sans CJK SC`, `Source Han Sans SC`, `Source Han Serif SC`, `LXGW WenKai`, or `Alibaba PuHuiTi 3.0`.
+- Keep title font weight moderate: `500-700` in CSS terms. Avoid `800/900`, extra-bold, heavy black, compressed poster fonts, or fake-stroked text unless the user explicitly asks.
+- If the layout feels empty, add meaning-bearing elements first: source cards, workflow nodes, checklists, tabs, arrows, evidence docs, terminal panels, dashboards, or small annotated chips. Do not solve emptiness with random decoration alone.
 
 `1:1` square cover:
 
@@ -88,8 +91,10 @@ Avoid making every image a rounded card grid. Use rules, columns, type hierarchy
 - If WeChat centers or indents `<h2>`, do not use semantic heading tags in the API/editor body. Use a normal section with `data-role="heading"` and an inner block-level span for the visible title.
 - Body text blocks should use `<section>` rather than `<p>` if WeChat's final editor adds first-line indentation. Body paragraphs/headings should carry inline `text-indent:0em !important; text-align:left;`. If direct section text still indents, wrap the text in an inner block-level span reset. Do not rely only on a parent class or stylesheet, because WeChat can rewrite styles after a draft enters the final editor.
 - Text is readable at phone thumbnail size.
+- Text uses free-for-commercial-use Chinese fonts and does not look overly bold or heavy.
 - Chinese line breaks are intentional.
 - No text touches edges or overlaps images.
 - Each image has one focal point.
+- The cover has breathing room but no large dead-empty region.
 - Official/source images are not distorted or cropped in a misleading way.
 - File paths are reported in the final response.

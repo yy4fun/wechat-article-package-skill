@@ -98,16 +98,18 @@ Avoid common AI-flavored phrasing unless it is truly natural in context:
 - Soft watercolor wash or gentle pastel gradient background.
 - Simple black line icons with flat fills.
 - Rounded irregular blobs, pebble shapes, cloud-like containers.
-- 1-2 small doodle icons such as rocket, lightning, shield, chart, calculator, document, or simple character.
+- 2-5 concrete objects that express the article's argument, such as workflow cards, evidence docs, terminal windows, dashboards, ledgers, permission shields, checklists, or review panels.
+- 1-2 small supporting doodle icons such as rocket, lightning, shield, chart, calculator, document, or simple character.
 - Decorative stars, dashed lines, dots, and tiny spark marks.
-- Lots of whitespace; avoid crowded layouts and heavy corporate mood.
+- Breathing room but not emptiness: keep one strong focal visual, fill dead corners with subtle topic-relevant micro elements, and avoid crowded layouts or heavy corporate mood.
 
 ## Composition
 
 - Main visual centered or slightly left.
 - Reserve the right side for large title text on a soft rounded blob.
 - Keep title high contrast: dark gray or black on pale background.
-- Use modern rounded sans-serif Chinese typography.
+- Use modern rounded sans-serif Chinese typography with moderate weight. Avoid extra-bold, heavy, compressed, or poster-like black fonts.
+- Use only free-for-commercial-use Chinese fonts for final rendered text. Preferred choices: `Noto Sans CJK SC`, `Source Han Sans SC`, `Source Han Serif SC`, `LXGW WenKai`, `Alibaba PuHuiTi 3.0`, or other verified free-commercial fonts. If unsure, use Noto/Source Han.
 - Avoid logos, brand marks, watermarks, random letters, distorted text, and realistic copyrighted people.
 
 ## Title Hooks
@@ -139,9 +141,10 @@ Use case: ads-marketing
 Asset type: Chinese WeChat official account cover image, 2.35:1 landscape
 Primary request: <article topic and hook>
 Visual style: flat hand-drawn doodle illustration, Macaron colors, soft watercolor background
-Composition: main visual left/center, right side title area on rounded pastel blob, lots of whitespace
+Composition: main visual left/center, right side title area on rounded pastel blob, breathing room but not empty; include 2-5 topic-specific objects
 Text (verbatim): Large title: "<8 Chinese chars or fewer>". Small subtitle: "<short subtitle>"
-Constraints: accurate Chinese text, no logos, no watermark, no random letters, no photorealism, no crowded layout
+Typography: use free-for-commercial-use Chinese fonts such as Noto Sans CJK SC, Source Han Sans SC, LXGW WenKai, or Alibaba PuHuiTi 3.0; medium or semibold weight, not heavy black.
+Constraints: accurate Chinese text, no logos, no watermark, no random letters, no photorealism, no empty-feeling layout, no crowded layout
 ```
 
 ## Quality Check
@@ -156,6 +159,7 @@ Before finishing, verify:
 - If it is a weekly source-blog column, the weekly guide is short and editorial, not a duplicate opening paragraph or a loose news list.
 - If covers are requested, both `21:9` and `1:1` variants exist unless the user only asked for one.
 - Text-heavy covers/cards use deterministic HTML/CSS when possible.
+- Final cover text uses verified free-for-commercial-use Chinese fonts and avoids overly bold/heavy title weight.
 - WeChat editor/API body does not repeat the platform title as a visible first `<h1>`.
 - WeChat editor/API body does not repeat the same hook before and after the cover image.
 - WeChat body section headings look like article headings, not detached card titles or broken vertical-bar blocks.
@@ -169,4 +173,5 @@ Before finishing, verify:
 - Chinese title is readable and accurate.
 - Main generated-image title is 8 Chinese characters or fewer unless the user explicitly chose otherwise; HTML-rendered covers may use longer titles if readable.
 - The cover communicates the article hook at a glance.
+- The cover has a clear focal visual and does not feel hollow, even when the background stays clean.
 - The final image path is in the workspace and shown to the user.
